@@ -1,6 +1,0 @@
-docker exec -it ae78fcad2df7 /bin/bash - run django commands from that level
-
-source env/bin/activate - start virtual env
-
-sudo chown -R ida:ida first_app/ - unprotect the folder
-
