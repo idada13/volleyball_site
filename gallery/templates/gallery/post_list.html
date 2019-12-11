@@ -1,0 +1,21 @@
+{% load static %}
+
+<html>
+	<head>
+		<title>Gallery</title>
+		<link rel="stylesheet" href="{% static 'css/creative.css' %}">
+	</head>
+	<body>
+		<div>
+			<h1>Comments in the Gallery Page</h1>
+			<h1><a href="/">link</a></h1>
+		</div>
+		{% for post in posts %}
+			<div>
+				<p>published: {{ post.published_date }}</p>
+				<h2><a href="">{{ post.title }}</a></h2>
+				<p>{{ post.text|linebreaksbr }}</p>
+			</div>
+		{% endfor %}
+	</body>
+</html>
