@@ -22,8 +22,7 @@ from homepage import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('homepage/', views.home_view),
-    path('homepage/', include('homepage.urls')),
+    path('homepage/', views.home_view),
     path('news/', include('news.urls')),
     path('gallery/', include('gallery.urls')),
     path('matches/', include('matches.urls')),
